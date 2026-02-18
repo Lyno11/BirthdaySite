@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style4site.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+    <body class="site-body">        
+            <h1>Today is Papa Jay's birthday 🎉</h1>
+            <img src="images/BirthdayBoy.png" 
+                alt="A guy is smiling while looking at a cake brought to him for his birthday"
+                id="img">
+            <h2 id="age">20 years old</h2>
+            <h4 id="date">01.09.2007</h4>
+            
+            <div class = "audio-controls">
+            <button onclick="playAudio()">Play▶️</button>
+            <button onclick="stopAudio()">Pause⏸️</button>
+
+            <audio id="bgAudio" loop>
+                <source src="media/audio/Sunset_Reflections_and_Laughter.mp3" type="audio/mp3">
+            </audio>
+
+            <script>
+                function playAudio() {
+                document.getElementById("bgAudio").play();
+                }
+
+                function stopAudio() {
+                document.getElementById("bgAudio").pause();
+                }
+            </script>
+            </div>
+
+            
+            <div class="gift-section">
+                <h2 class="gift-title">Here's how happy I am for you today 🥳</h2>
+                <h3 class="gift-hint">(Hover over the gift)</h3>
+                <div class="gift-img" id="gift-img1"></div>
+            </div>
+
+             <div class="gift-section">
+                <h2 class="gift-title">Another one and another one!!!!!🥳</h2>
+                <div class="gift-img" id="gift-img2"></div>
+            </div>
+
+             <div class="gift-section">
+                <h2 class="gift-title">Happy Bday papa Jay 🥳</h2>
+                <div class="gift-img" id="gift-img3"></div>
+            </div>
+
+            <div class="gift-section">
+                <h2 class="gift-title">Maaaa Bwooooiiii!!!!!🥳</h2>
+                <div class="gift-img" id="gift-img4"></div>
+            </div>
+            <p class="footer">This site was courtesy of <a href="https://scrimba.com/learn/htmlandcss" target="_blank">HTML/CSS course</a></p>
+    </body>
+</html>
